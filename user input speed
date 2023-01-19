@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class fullthrottle{
+    
+    public void fullThrottle() {
+        System.out.println("the car is going as fast as it can!");
+    }
+    
+    public void speed(int maxSpeed) {
+        System.out.println("Max speed is: ");
+    }
+    
+    public static void main(String[]args){
+        Scanner myObj = new Scanner(System.in); 
+        System.out.println("Please enter speed");
+
+        String userName = myObj.nextLine();  
+        System.out.println("Max Speed is: " + userName); 
+    }
+}
