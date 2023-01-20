@@ -1,0 +1,40 @@
+class Polymorphism{
+    public void mammal(){
+        System.out.println("the mammals have Mammarian glands");
+    }
+}
+class Dog extends Polymorphism{ //the extend is used to extend this class to the original class
+    public void mammal(){
+        System.out.println("is a mammal");
+      }
+}
+class Snail extends Polymorphism{
+    public void mammal(){
+        System.out.println("is not a mammal");
+    }
+}
+class Planner extends Polymorphism{
+    public void mammal(){
+        System.out.println("is not a mammal");
+    }
+}
+class House extends Polymorphism{
+    public void mammal(){
+        System.out.println("is not a mammal");
+    }
+}
+public class MainSpecies{
+    public static void main(String[]args){
+        Polymorphism myPolymorphism = new Polymorphism();//creates a polymorphism object
+        Polymorphism myDog  = new Dog();                 //creates a dog object
+        Polymorphism mySnail = new Snail();              //creates a snail object
+        Polymorphism myPlanner = new Planner();
+        Polymorphism myHouse = new House();
+        myPolymorphism.mammal();
+        myDog.mammal();
+        mySnail.mammal();
+        myPlanner.mammal();
+        myHouse.mammal();
+    }
+}
+       
